@@ -42,7 +42,10 @@ public abstract class Contact {
     }
 
     void displayContact() {
-        System.out.println("Name:" + name + "\nEmail Address:" + email);
+        System.out.println("\nName: " + name + "\nEmail Address: " + email);
+    }
+    public String contactlistsheet() {
+        return ("\nName: " + name + "\nEmail Address: " + email);
     }
 
 }

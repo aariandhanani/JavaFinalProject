@@ -45,7 +45,7 @@ public class calculator {
                     System.out.println("Invalid operation!");
             }
             //Asks to see if the loop should be ran again
-            System.out.println("Would you like to perform another operation?\n[1]Yes[2]No");
+            System.out.println("Would you like to perform another operation?\n[1]Yes\n[2]No");
             choice = numbers.nextInt();
             switch (choice){
                 case 1:
