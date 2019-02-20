@@ -79,14 +79,14 @@ public class settings {
                     int check = 0;
                     int chances = 3;
 
-                    while (passwordtest != passwordenter) { //broken code
-                        passwordenter = passcheck.nextInt();
+                    while (passwordtest != passwordenter) {
                         if (passwordenter == passwordtest)
                         {
                             passwordenter = passwordtest;
                         }
                         else
                         {
+                            check--;
                             while (check == 0) {
                                 if (chances != 0) {
                                     chances--;
@@ -95,6 +95,12 @@ public class settings {
                                 else{
                                     System.out.println("Password entry failure. Your device will now reset");
                                     System.exit(5);
+                                }
+                                passwordenter = passcheck.nextInt();
+                                if (passwordenter == passwordtest)
+                                {
+                                    passwordenter = passwordtest;
+                                    check++;
                                 }
                             }
                         }
